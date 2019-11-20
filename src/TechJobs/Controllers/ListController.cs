@@ -5,13 +5,13 @@ using TechJobs.Models;
 
 namespace TechJobs.Controllers
 {
-    public class ListController : Controller
+    public class ListController : TechJobsController
     {
         internal static Dictionary<string, string> columnChoices = new Dictionary<string, string>();
 
         // This is a "static constructor" which can be used
         // to initialize static members of a class
-        static ListController() 
+        static ListController()         
         {
             
             columnChoices.Add("core competency", "Skill");

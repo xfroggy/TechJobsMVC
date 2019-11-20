@@ -3,15 +3,15 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace TechJobs.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : TechJobsController
     {
         public IActionResult Index()
         {
-            Dictionary<string, string> actionChoices = new Dictionary<string, string>();
-            actionChoices.Add("search", "Search");
-            actionChoices.Add("list", "List");
-            
-            ViewBag.actions = actionChoices;
+            //Dictionary<string, string> actionChoices = new Dictionary<string, string>();
+            //actionChoices.Add("search", "Search");
+            //actionChoices.Add("list", "List");
+
+           // ViewBag.actions = actionChoices;
 
             return View();
         }
